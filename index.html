@@ -143,7 +143,7 @@ nav {
   background: linear-gradient(145deg, var(--green-l), var(--green));
   position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.15);
 }
-.author-photo-wrap img { position: absolute; inset: 0; }
+.author-photo-wrap img { position: absolute; inset: 0; z-index: 1; }
 .author-photo-fallback {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
@@ -509,20 +509,15 @@ footer { background: #0d1520; padding: 56px 0 40px; text-align: center; }
         </p>
         <div class="photo-duo">
           <div class="tl-photo" style="height:200px">
-            <!-- 이미지: images/03_jersey.jpg (대우로얄즈 6번 유니폼) -->
-            <img src="images/03_jersey.jpg" alt="대우로얄즈 유니폼 6번" onerror="this.style.display='none'">
-            <div class="tl-photo-fallback"><span>👕</span>대우로얄즈 #6 유니폼</div>
-          </div>
-          <div class="tl-photo" style="height:200px">
             <!-- 이미지: images/08_ball_front.jpg (대우로얄즈 사인 공 앞면) -->
             <img src="images/08_ball_front.jpg" alt="대우로얄즈 사인 축구공" onerror="this.style.display='none'">
             <div class="tl-photo-fallback"><span>⚽</span>팀 사인 기념 축구공</div>
           </div>
-        </div>
-        <div class="tl-photo" style="height:220px; max-width:520px; margin-top:14px">
-          <!-- 이미지: images/09_ball_back.jpg (사인 공 뒷면 — 황명구 서명) -->
-          <img src="images/09_ball_back.jpg" alt="황명구 서명이 담긴 대우로얄즈 공" onerror="this.style.display='none'">
-          <div class="tl-photo-fallback"><span>✍️</span>황명구 친필 사인 — 대우로얄즈 기념구</div>
+          <div class="tl-photo" style="height:200px">
+            <!-- 이미지: images/09_ball_back.jpg (사인 공 뒷면 — 황명구 서명) -->
+            <img src="images/09_ball_back.jpg" alt="황명구 서명이 담긴 대우로얄즈 공" onerror="this.style.display='none'">
+            <div class="tl-photo-fallback"><span>✍️</span>황명구 친필 사인 — 대우로얄즈 기념구</div>
+          </div>
         </div>
         <div class="tl-quote">
           "많은 사람은 멈춤을 실패라고 여긴다. 하지만 내게 멈춤은 끝이 아니라 전환이었다."
