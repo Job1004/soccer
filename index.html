@@ -272,6 +272,7 @@ nav {
   background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
   position: relative;
 }
+.media-photo img { position: relative; z-index: 1; }
 .media-photo-fallback {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
@@ -520,6 +521,11 @@ footer { background: #0d1520; padding: 56px 0 40px; text-align: center; }
             <div class="tl-photo-fallback"><span>✍️</span>황명구 친필 사인 — 대우로얄즈 기념구</div>
           </div>
         </div>
+        <div class="tl-photo" style="height:200px; max-width:320px; margin-top:14px">
+          <!-- 이미지: images/11_bag.jpg (대우로얄즈 팀 가방) -->
+          <img src="images/11_bag.jpg" alt="대우로얄즈 팀 가방" onerror="this.style.display='none'">
+          <div class="tl-photo-fallback"><span>👜</span>대우로얄즈 팀 가방</div>
+        </div>
         <div class="tl-quote">
           "많은 사람은 멈춤을 실패라고 여긴다. 하지만 내게 멈춤은 끝이 아니라 전환이었다."
         </div>
@@ -556,6 +562,18 @@ footer { background: #0d1520; padding: 56px 0 40px; text-align: center; }
           대학 행정의 전 영역에서 27년간 실무 경험을 축적하였다.
           정부 재정지원사업, 청년 인재양성 사업, 지자체 협력사업, 공공가치 기반 프로젝트를 기획·운영하였다.
         </p>
+        <div class="photo-duo">
+          <div class="tl-photo" style="height:200px">
+            <!-- 이미지: images/12_cnu_team.jpg (CNU 유니폼 단체사진) -->
+            <img src="images/12_cnu_team.jpg" alt="충남대학교 CNU 유니폼 단체사진" onerror="this.style.display='none'">
+            <div class="tl-photo-fallback"><span>🏫</span>충남대 CNU팀</div>
+          </div>
+          <div class="tl-photo" style="height:200px">
+            <!-- 이미지: images/13_field_suit.jpg (잔디 위 정장 사진) -->
+            <img src="images/13_field_suit.jpg" alt="경기장 잔디 위 황명구" onerror="this.style.display='none'">
+            <div class="tl-photo-fallback"><span>⚽</span>현장의 행정가</div>
+          </div>
+        </div>
         <div class="tl-quote">
           "진짜 변화는 현장을 모르는 사람이 아니라, 현장에서 사람을 만나고 문제를 이해한 사람이 만들 수 있다."
         </div>
@@ -570,11 +588,20 @@ footer { background: #0d1520; padding: 56px 0 40px; text-align: center; }
           카이스트 지식재산전략 최고위과정을 수료하였다.
           행정사·스포츠전문지도사 자격도 갖추며 학문적 기반과 제도적 전문성을 함께 완성하였다.
         </p>
-        <div class="tl-photo" style="height:280px; max-width:220px; border-radius:16px; overflow:hidden; margin-top:20px; position:relative; background:linear-gradient(135deg,#e2e8f0,#cbd5e1)">
-          <!-- 이미지: images/10_graduation.jpg.PNG (박사 학위 수여식) -->
-          <img src="images/10_graduation.jpg.PNG" alt="박사 학위 수여식" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center top">
-          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#94a3b8;font-size:13px">
-            <span style="font-size:36px">🎓</span>박사 학위 수여식
+        <div class="photo-duo" style="max-width:520px; margin-top:20px">
+          <div style="height:280px; border-radius:16px; overflow:hidden; position:relative; background:linear-gradient(135deg,#e2e8f0,#cbd5e1)">
+            <!-- 이미지: images/10_graduation.jpg.PNG (박사 학위 수여식) -->
+            <img src="images/10_graduation.jpg.PNG" alt="박사 학위 수여식" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center top;position:relative;z-index:1">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#94a3b8;font-size:13px">
+              <span style="font-size:36px">🎓</span>박사 학위 수여식
+            </div>
+          </div>
+          <div style="height:280px; border-radius:16px; overflow:hidden; position:relative; background:linear-gradient(135deg,#e2e8f0,#cbd5e1)">
+            <!-- 이미지: images/14_patent.jpg (특허증 — 자원절약형 전기제품 커넥터) -->
+            <img src="images/14_patent.jpg" alt="특허증 — 자원절약형 전기제품 커넥터" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;object-position:center top;position:relative;z-index:1">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#94a3b8;font-size:13px">
+              <span style="font-size:36px">📜</span>특허증
+            </div>
           </div>
         </div>
         <div class="tl-quote" style="margin-top:20px">
@@ -822,6 +849,11 @@ footer { background: #0d1520; padding: 56px 0 40px; text-align: center; }
     <p class="sec-body reveal" style="margin-bottom: 48px;">
       황명구의 미래는 세 가지 방향을 향해 있다. 이 비전들은 이 책에서 그 씨앗을 찾을 수 있다.
     </p>
+    <div class="tl-photo" style="height:220px; max-width:520px; margin-bottom:40px; border-radius:16px; overflow:hidden; position:relative; background:linear-gradient(135deg,#e2e8f0,#cbd5e1)">
+      <!-- 이미지: images/15_soccer_class.jpg (황명구축구교실 유니폼) -->
+      <img src="images/15_soccer_class.jpg" alt="황명구축구교실 유니폼" onerror="this.style.display='none'" style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1">
+      <div class="tl-photo-fallback"><span>⚽</span>황명구축구교실</div>
+    </div>
     <div class="vis-grid">
       <div class="vis-card v1 reveal">
         <div class="vis-bar"></div>
